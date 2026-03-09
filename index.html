@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Clarity</title>
+<!-- PWA -->
+<meta name="theme-color" content="#09090f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Clarity">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAATLklEQVR4nO2de3QUVZrAv1v9zoOER94ECCSBPAgPeUhAIaggy0sYV4FRmVl3xVXP7M4wO7PiccXj7PG4I+thdmbHcVZXNo56RN0hAwZHhwUEQkDghASigAGG8FQhCXl1+lH7B+lM5ebWs6urqivfL6dOV1fXrbrV9cvX3711u5qkJI0CC8CbXQFEF4jZFXCatF8U2J7Q59VwwY0UGiUefAjPuSFyx1polBiJYIjcsRIaRUakiPihu9ic3hsElBlRju6uOIl+/yQoMqIFXaO1XhEaZUaiRReHos2hUWRET6KO1tFEaJQZiRWa3dIqNMqMxBpNjjk1xHaUGTEKHlSmH06V66PMiNGoklpNyoEyI2ah2D2lQqPMiNkoclCJ0CgzYhVkXdTSKEQQyyIXoTE6I1ZD0kmpXg6UGbEqoj0fsRhthyCmISY0RmfE6jAdZTUKUWYkXhiQemDKgdgKWmiMzki80c9ZtWM5EMTSYMqB2AphoxDTjThkf/mRIqXrzj5wW2Ms62IifY1DMiJprHAhYmFE5A2r2MSAT2QbSY5CxwOUxCx51Zw3VoOpT/I4l7uf0CizxZAQmT5X0QgtfG4HsQkZkTQOAIW2DPvLP4+ILCZxrIQeIPfsA9PiTWxC0lBoS7BvoMhiEhshdGSeAwCYEz9io9BWQEJm+pGeZz2XQonQ9CMHALBoE/8mvbGbs6bPVLFvIyAkLWkcymwivTLLiWya0Is28ZVyG7WS2Ci0SYhEZSUix0JoptiLNvFvKd2wVaTGK4UmQMnMw0CZTZ/UyAwAkFxzuFbN+rFCz7uPIgr4rPwwLTOAdHSWSzu0Xlgh1HaEyzRJYQWXMEIbCENmrdE5LJiUlgOqnFR0flvL8SXVHDI9Spv1o0GDDhGZgTEvtkyviysRhNuzTWBDoQ1AhcwssVki6yF0BCLYBwdxPp4YhTYONTLTUVkqn2Y910JE7LiO1ih0jOmNzsIGIIB43gzQX2alDUO1QrMahBHUNDItB0cA/2L1J5A5glQjMPJc2Gij14n1BADAV68n92uRqXo9+Z7Z73lcf7xYmb3lh4Sj5WhpWMuE+bJYDwjrtagFltinaqjjNhwUOrbQeTMAWxqWzPS6Rkfp76g50Or15GGwQLqCQseA3ihFn1ypKC3Vnyy2nKfKy01Ko3XfpFTq6vXkIcHTsJlRGhuFsUXsY1xpCiKWFkSQ6psWQnfN8dRrdNm+Zb1Sk0Wb+PfpjVavJ2sE6wNj3nBIZlKB5nwJGciev0RnuegaeU2sO09KbLkx0zSiY52h/wAlep5+zomsw1qfm3tghuHjqPG+HLFFqqEllJm1PjDmxfql6Xkl0BdTIuXpiB0RJLJ/+uILK7oPnDUIzKF1ZE95rVzuSOe9rOX0MoCBMuvZABQbJCVWL9YIQSYK3g/dwRxaf8QGHrFQmkuLXWTRGqHpKCyMvGLRmV5GQ+/flKuOKLQx0IKL3Y6AJanaYaZSSDUA6XRCSmKWrJbIXUlWUiE2CnVg962PV6VpgdLho6ztAWNe+MiC9fUqsQYgB+INPeHEWo9Vjpt3YKZhjUOM0Pojl7MqLcdaDhLzAOx9sNIIJQ1AehtS9RbD8KiNvRzGworOYii5ykg/slIZYfecmPD0NpT8sgOrx0ME4xzDCG0+SiK5VOQGYPdLA/Ua/fUren3aOin5LQsKbU2kekrkut2ktsm6SsgqF7fjojm5rB4n+Wl3+UHh1UG5xqBWWHIrHWYaeV2u71stio55d/nBIqPOBUZo49FDemEuLtwmQH9BWQ1ApbmvkihtuRQEhbYmanpKxBqKLJTkyWLrxgVOIHFZ78GMVE8JS3pWnqyih0InDPIMI3SM4LwkwZPvKPYWOEpdI7k8VxqX5Uznsh1DyDDiIV7ODV7iIi4+wAfCPdAVbuNvhFrD3wSuhP/cczF8xn82dLL7VOhI8Fr4goLdsaI03U03KCIX64c3EY148h3FSTNdFYm3uyq8BY5SUPAVN+ImHocbPI4kkurK5vK8RTBd+Hr31UBzd234o47aQHVnXXAvH4BumU3SUlsCoyqCETpKEhMTIHWJZ3XKEvcqT56jUO/tezNcI73L4LHUZZ7HAp3Bjo6a4Pa2bYFfdn8ZOixSJBKZLSOzkZCc5AnRdNsMWjxeD/zNuofgqfWPQUrqEMP3f72h9bC/yrm5fV/gQz4EQWDn1MIeLfq5krEYuq0zv2aWIeM54rLz3GzuWjgXPju6E5554cemyAwAMKw0ZXrWhsS36rJq7g7xQZawQpHp1+L+DklicOZfloifKTExEX7+Hy/Alq2vQvbITK3vua78qunfhh65cdAHyg6CRs26UWLMOcJGoUIyszNgy9ZXoXjieLOrIgYBdu4sFFRNdFY6PFRx5YwAG4UKmFBSCJUf/AYyszPMrooUYs7QMguXRxuNFeXPd9WU43hoq5A3bjS8s+11GJE+3OyqSCElZmQ5R61LqHX6SRiDOhoCCi1BRlY6vPOHN6wuM8AtATmQHw8tfIzMq8mvLQ8KLYLD4YBfvfEy5IzM0mV7bW1t7Tt27Nizd+/ezxsaGk6fPXu2uaWlpa2rq8vv9XrdiYmJCVlZWWm5ubmZZWVl46dOnVo8b968GSNGjBiqcBdikZUlMD0vfC4VnekobjnJ8TdWRPjR00/CzNnTot5OY2PjVy+++OJrW7du/dgZdPnnjVgQunvoymBhTlFoZP7o0BBnCu/hvGF/2E+6Qh1NX1+/Si7vvMjVvF/PvX7zd66evPYpSx9YvGzNmjWL09NFPypY0VfqdZbYUimIFLKNRiMdI7nJxXhhhWJ8cQHs3P8BOBwOzdvo7u72P/vss7945ZVXtozxjguuy/tR8N7M+4IeziMcIio3fpnngQ83tB5zVn/7+2TfPPjrx/9x3aMlJSX5kf1UVFSsfbR9/Uczhs2RuiTOEjryyOoBYclOi6qoQXh3zWxD756EKQeD5196OiqZL126dG358uVP1h+tb1if/1zoe6OfCDmIQ9ilxsp3hWGsbwwzAcJNTJkanJgy9XrgXM9r29d8ULnl9so1Tz3zxA9HjRqVJSgrFQal0o7II51CSEVosW+Gmw4KTTH3rtlQPlf7b0heuXLlm4qKirUt59vOvT2jOlQ6ZIrUgH2mxNSyiGxhF+eGFZmrO8Nnw7/94P4PP/SuDv5zIBAIMspJ7YcVncXuWQcSy1j7ML2nBIWmWPeD72su6/f7e5YtW/bE9fMt5343fUdoTEK+2NhkgP5RWkrsflIDAOEIB4uH3n+9a0fnT45ebExyprvURmjhI0tmoJ7T9VYUmY1ONwBQ6H4UFuXDnIpZmstv2LDhlbojx+vfnv5ReExCPsDAE04PHIpIKhWdhfORqBcGAPA5Evh/Kny+nVGWhiW0mruPCutL78dSqQf2cghY8cASzWXr6uq+2Lx5c+UQV9pPJ6ZMfQkG3lkUgB2JhZFaLDoL4YESWwF0hBUul2ooCp8rvcpIAIC7p2ZOoxluxe0VoViwaPk9mstu3Ljxlw7eVZDsHvawYLFY9FKyjFWW1dPAugIo1ishdrVQyb6ULDM9OqLQvYwtGANj88doKtvU1HRh27Ztu1I86U8BEMc9NXMagX0zQ7noJyajlKyR8nKT3Dak9k9354kdD0BvdBZ9s2IM5tC9TLt9iuaylZWVVQ7iGulzJs+nXpJKJ+hlfY0+wWt6RjxWHi31SMsM1GtyaYkpmF4BqzB1+iTNZauqqnYlOlOWgeAkU1FKaYohFqkBBsqmxyS1XQAN3XlmRmcAvHNS31QySdvN5m/cuNF27NixxgTnkPn0NhcMTD1YMrGkVvJbJrGYlNSB9RwAgFtQM6fR7POI31jpnXJH54AW6urqviDAJbsdviLWdhfU3BGRWnjyxeQQLpfKe8XKKZ2kyivN54XHwt06TvPPI+bQcOub20OHpWoqe+LEiTNuzjsB+p9kFnQ+TWTmhWXktq0EehuEsZyOypFHqXlLpa2WqoxZpGelaS7b3Nx8xcV58qXW6Y3SAOKDf4Tz9DKlXXPRRGu5NEesrhx1fKaDQgNAQmKC5rJXr1791sG5ZL8xq0BquXRATReckklue3J1s5zMANgoBAIACT6v5jewq6ur20mcw5XsZyFbajmR5WRUWg5A2z8Fa/sc9B6P2eeOWbHBjtvj1lzW7/f3EMIp/o9gSA0gLpHUayy51Vxc0brfPpmVHrORYC8HEOjxBzS/gW6320WAc6vZ38KaO8UiNZj+ZkjXp1fmOy3Ro8GasJcDALq6ujSXTUhI8PHAq/6PiEj98ay9kbv/E4nV9bpqSG+DMObFHjnBP6JlwZQDADo7tAudkZExnOfDmjfQK4mejT29Jw7iRGYAbBQCAYBrl7/W/Abm5ORkhPjgt9Hs/97+KQhA/+ho9CTcPwe99TP7HCmdMOUAgM6OTmi50cqnDk0h8mv3p6SkJD/EBz6Jtg4RqXfeSkEAovuBITHo4yMi830ix6AOMQWF7qX5/EWSOjRFdblJkyZNCIT9r+pVD4bYAPrJLSV0X/oZjyJHwF+S7eVE3RdQOrlYdblhw4alFJeND10/HdB1uOe9NXN7xd5TBP2/oRLNPlhlBSLPbRRfLT7ACN3LscPH4cG1KzWVXbxk8fTXN73zhZvzaRuyJ8FfJOuTm0ZN9B7QCSDcvh0gY5PL8EYzADCuMA/++PnvNZU9c+bMn2dOvGN7qiv9CX1rJU81W3Imi2wmLwsUWsCnx6oCeeNGu7SUXXnfdzbW7TrzHMTz57UNwH5oAR9v+5MmmQEA/mXjs6v8fMduHauDaACFFrDtvR2ay06ePHnCg3+7ogmAD+lYJUQlZGzyJEw5BGyp+nXnnHmzNI0n7e7u9i+ev/LTcw2XFutdL0QZeKWQmt74xVuaB0d7vV5P5fv/NSNrdNrpWNczweeFnzz/DzDt9smmv2dWmjDloNj76X7Yv+dgi9by2dnZae9Wv5k6viz/io7V6oPjOLhv1RLY+fn/wroffh86+db3ukMdR2Oxr3gEhWbwrz99OTUUCmm+OjdyZE7a+59UDn347x+44nDo8xa73C5YsXopbD/wHrz82s8gJ/fWnXTbgy07eOCDMsUHDSg0g1Mnz8B/bvptSzTb8Pl8nude2pC5bf87Lcsf+Kuwli8REEKgbGoJPPPij+Gzkzvh5795AQqLJb++OOgh47BRyMTh4ODNP/z64qw5M7Xd34CirfVmYPcfP3Mc3n+U+/LEaWg+fxFutraD398DLrcLfAleSM9Mg+yRmTC+pABKJxfDzDumwTCZn1ipqKhYe+rQhSd9jqQZetQz3iH5yZNRaBHSs0aE3v3kjZbcUbmW/RmsioqKtacPNaPQvWDKIcG1y984Hln2OFy79nWL2XVBlIFCy9DcdGn4I0v/rvPSpUvfmF0XRB4UWgFfNZ7PXlnx3bb64/VfmV0XRBoUWiHfXm4Zu2rBo0lv/veWT82uCyIOCq2Cns5Axgs/+PfyVSu++1Zzc3NMLpwg0cERwD81fw7iSDj6p8aH7ixb8OWGp595raWl5aYZJ662tvb46tWr1+/bt++I2e+Jpf4Kkqdgt51GeAj7g56udxc/uODq44+vW1FaWloQy/11dHR0VVVV7dq8efP/1NbWHvc6EstS3Wlrk5ypCwkQ7b8UaiNQaB0I8+GOm8HrVXmlOYfuXbxw3NKlSyumTJlSxHFc1CndxYsXr27fvn13VVXVrl27dtX2+Hu4RGfK/FRX2iNeR2KZHvW3Eyi0zvhDnSc7Qm3/R3yhgyWTihy33XZbUWFh4Zjc3NysUaNGZQ0fPjzV5/N5fT6fx+l0Otrb2zvb2to62tra2ltbW282NTVdaGhoOF1fX3+qvr7+1IULF644iSsj0ZkyL9GZMj/BmTSTAOcx+zitCgodQ8J8uMMf7jzZHeo8EQj7zwX5nsuBcM/lMB9qCUO4m+fDfh4gxBEugQNHIke4JI44kl2cJ9fDeQvcnK/Q4/AWOolb9na9yC1IIQqN2AgnEGJ2HRBEN7AfGrEVKDRiK1BoxFY4MYNG7ARGaMRW4N1HEVuBERqxFSg0YiuwUYjYCozQiK1AoRFbgb0ciK3ACI3YCmwUIrYCIzRiK1BoxFag0IitwF4OxFZgoxCxFZhyILYChUZsBQqN2AoUGrEVToK9HIiNwAiN2AoUGrEVHOCVFcQ+EIzQiK1AoRFbgb0ciK2IRGi0Gol3CACmHIjNQKERWyEUGtMOJF7pcxfHQyO2Ar+xgtgKOodGu5F4o5+z2ChEbAVLaIzSSLwwwFWxRiEBAPxBTsTKMNXFlAOxFVK9HBilEasiKq1chMZ8GrEakk5iyoHYCiVXCjH1QKyCrK5KIzSmHojZKHJQTcqBUiNmodg9tWM5MP1AjEaVoFoahRipEaNQ7ZrW4aMYqZFYo0nNaLrtMFIjsUKzW06ddozRGtGDqIOkXhdWMFoj0aKLQ3p+YwWjNaIFXYNhLL5TiA1GRCm66xdtDi0GRmtEipilqLESOoKw4ij34MaQdlashRaCcg8+DO8sMFJoIfSBouD2wPTerv8HkC370Bg92LcAAAAASUVORK5CYII=">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#09090f;--bg2:#12121a;--g1:rgba(255,255,255,.03);--g2:rgba(255,255,255,.06);--g3:rgba(255,255,255,.09);--bd:rgba(255,255,255,.06);--bd2:rgba(255,255,255,.1);--tx:#f0f0f5;--tx2:rgba(240,240,245,.55);--tx3:rgba(240,240,245,.3);--v:#a855f7;--f:#d946ef;--c:#22d3ee;--p:#ec4899;--r:#f43f5e;--a:#fbbf24;--e:#34d399;--gf:linear-gradient(135deg,#d946ef,#a855f7);--gv:linear-gradient(135deg,#a855f7,#6366f1);--gc:linear-gradient(135deg,#22d3ee,#3b82f6);--ge:linear-gradient(135deg,#34d399,#22d3ee);--sh:0 2px 8px rgba(0,0,0,.3),0 8px 32px rgba(0,0,0,.2);--r:20px;--sb:env(safe-area-inset-bottom,0px)}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:#09090f!important}body{font-family:'Manrope',sans-serif;background:#09090f!important;color:var(--tx);min-height:100dvh;overflow-x:hidden;padding-bottom:calc(74px + var(--sb));-webkit-font-smoothing:antialiased}
+body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 50% 40% at 20% 10%,rgba(168,85,247,.07),transparent),radial-gradient(ellipse 40% 50% at 80% 90%,rgba(34,211,238,.05),transparent),radial-gradient(ellipse 60% 30% at 50% 50%,rgba(217,70,239,.03),transparent)}
+.hdr{position:sticky;top:0;z-index:100;background:rgba(9,9,15,.8);backdrop-filter:blur(30px) saturate(1.4);-webkit-backdrop-filter:blur(30px) saturate(1.4);padding:calc(env(safe-area-inset-top,10px) + 4px) 18px 8px;border-bottom:1px solid var(--bd)}
+.hdr-r{display:flex;align-items:center;gap:10px}.logo{font-family:'Sora',sans-serif;font-size:1.35rem;font-weight:800;background:var(--gf);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.8px}.hdr-rt{margin-left:auto;display:flex;align-items:center;gap:7px}.hdr-d{font-size:.62rem;color:var(--tx3)}.hdr-s{font-size:.6rem;font-weight:700;padding:4px 10px;border-radius:20px;background:rgba(251,191,36,.08);color:var(--a);border:1px solid rgba(251,191,36,.12)}.hdr-wk{font-size:.58rem;font-weight:700;padding:4px 10px;border-radius:20px;background:rgba(168,85,247,.08);color:var(--v);border:1px solid rgba(168,85,247,.12)}
+.nav{display:flex;gap:3px;padding:8px 18px 0;z-index:1;position:relative}.nb{flex:1;padding:10px 2px 8px;text-align:center;font-family:'Sora',sans-serif;font-size:.68rem;font-weight:600;background:none;border:none;color:var(--tx3);cursor:pointer;border-radius:14px 14px 0 0;transition:.25s;position:relative}.nb.on{color:#fff}.nb.on::after{content:'';position:absolute;bottom:0;left:15%;right:15%;height:2.5px;background:var(--gf);border-radius:2px;box-shadow:0 0 12px rgba(217,70,239,.3)}.nb .ni{font-size:1.15rem;display:block;margin-bottom:2px}
+.sec{display:none;position:relative;z-index:1;padding:10px 18px}.sec.on{display:block;animation:fu .35s cubic-bezier(.16,1,.3,1)}@keyframes fu{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.capw{padding:0 18px;z-index:2;position:relative}.cap{display:flex;align-items:center;gap:5px;background:var(--g2);border:1.5px solid var(--bd2);border-radius:50px;padding:4px 5px 4px 16px;margin:10px 0 4px;backdrop-filter:blur(12px);transition:.25s}.cap:focus-within{border-color:rgba(168,85,247,.35);box-shadow:0 0 0 4px rgba(168,85,247,.06)}.cap input{flex:1;background:none;border:none;outline:none;color:var(--tx);font-family:'Manrope',sans-serif;font-size:.88rem;font-weight:500;min-width:0}.cap input::placeholder{color:var(--tx3)}.cb{width:38px;height:38px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;transition:.2s}.cb:active{transform:scale(.85)}.cb-m{background:var(--gc);color:#fff}.cb-s{background:var(--gf);color:#fff}
+.wc{display:flex;align-items:center;gap:14px;padding:18px;background:var(--g1);border:1px solid var(--bd);border-radius:var(--r);backdrop-filter:blur(10px);margin-bottom:12px;position:relative;overflow:hidden}.wc::before{content:'';position:absolute;top:-20px;right:-20px;width:80px;height:80px;background:var(--gf);border-radius:50%;opacity:.06;filter:blur(20px)}.wc-n{font-family:'Sora',sans-serif;font-size:2.2rem;font-weight:800;line-height:1;background:var(--gf);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.wc-l{font-size:.68rem;color:var(--tx2);font-weight:600;line-height:1.3}.wc-r{margin-left:auto;text-align:right}.wc-t{font-family:'Sora',sans-serif;font-size:1.3rem;font-weight:800;color:var(--c)}.wc-d{font-size:.58rem;color:var(--tx3);margin-top:2px}
+.th{background:var(--g1);border:1px solid var(--bd);border-radius:18px;padding:14px 16px;margin-bottom:8px;backdrop-filter:blur(10px);animation:ci .35s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}.th::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;border-radius:2px 2px 0 0}.th.i1::before{background:var(--ge)}.th.i2::before{background:linear-gradient(90deg,#fbbf24,#f97316)}.th.i3::before{background:linear-gradient(90deg,#f43f5e,#d946ef)}@keyframes ci{from{opacity:0;transform:translateY(8px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}.th-sum{font-family:'Sora',sans-serif;font-size:.9rem;font-weight:600;color:#fff;line-height:1.4;margin-bottom:3px}.th-raw{font-size:.72rem;color:var(--tx3);line-height:1.3;font-style:italic;margin-bottom:8px}.th-tags{display:flex;flex-wrap:wrap;gap:4px;align-items:center}.tg{font-size:.6rem;padding:3px 9px;border-radius:10px;font-weight:700}.th-time{font-size:.58rem;color:var(--tx3);margin-left:auto}.th-x{background:none;border:none;color:var(--tx3);font-size:.72rem;cursor:pointer;padding:2px 4px;margin-left:4px}.th-ld{font-size:.72rem;color:var(--v);display:flex;align-items:center;gap:5px;margin-bottom:6px}.sp{width:13px;height:13px;border:2px solid rgba(168,85,247,.2);border-top-color:var(--v);border-radius:50%;animation:spin .6s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.ac{background:var(--g1);border:1px solid rgba(168,85,247,.12);border-radius:var(--r);padding:20px;backdrop-filter:blur(12px);position:relative;overflow:hidden}.ac::before{content:'';position:absolute;top:-30px;left:-30px;width:100px;height:100px;background:var(--gv);border-radius:50%;opacity:.06;filter:blur(25px)}.ac-t{font-family:'Sora',sans-serif;font-size:.95rem;font-weight:700;color:#fff;margin-bottom:6px}.ac-sub{font-size:.76rem;color:var(--tx2);margin-bottom:12px;line-height:1.4}.ac-body{font-size:.82rem;line-height:1.65;color:var(--tx)}.ac-body strong{color:var(--v)}.ac-btn{width:100%;padding:14px;border:none;border-radius:16px;background:var(--gf);color:#fff;font-family:'Sora',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;transition:.2s;margin-top:10px;box-shadow:0 4px 20px rgba(217,70,239,.2)}.ac-btn:active{transform:scale(.97)}.ac-btn:disabled{opacity:.4}.ac-btn2{width:100%;padding:14px;border:none;border-radius:16px;background:var(--gv);color:#fff;font-family:'Sora',sans-serif;font-size:.85rem;font-weight:700;cursor:pointer;transition:.2s;margin-top:8px;box-shadow:0 4px 20px rgba(168,85,247,.15)}.ac-btn2:active{transform:scale(.97)}.ac-btn2:disabled{opacity:.4}
+.tk{display:flex;align-items:flex-start;gap:12px;background:var(--g1);border:1px solid var(--bd);border-radius:18px;padding:14px 16px;margin-bottom:8px;backdrop-filter:blur(10px);animation:ci .35s cubic-bezier(.16,1,.3,1)}.tk:active{transform:scale(.985)}.ck{width:24px;height:24px;border-radius:50%;border:2px solid var(--bd2);background:none;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:transparent;font-size:.65rem;transition:.3s}.ck.dn{background:var(--ge);border-color:transparent;color:#fff;box-shadow:0 0 12px rgba(52,211,153,.2);animation:pop .3s}@keyframes pop{50%{transform:scale(1.35)}}.tk.dn{opacity:.25}.tk.dn .tk-t{text-decoration:line-through}.tk-b{flex:1;min-width:0}.tk-t{font-size:.86rem;line-height:1.35;font-weight:500}.tk-s{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-top:5px}.tp{font-size:.56rem;padding:2.5px 8px;border-radius:8px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.tp-a{background:rgba(244,63,94,.1);color:var(--r)}.tp-m{background:rgba(251,191,36,.08);color:var(--a)}.tp-b{background:rgba(52,211,153,.08);color:var(--e)}.tk-d{font-size:.62rem;color:var(--tx3)}.tk-area{font-size:.56rem;padding:2.5px 8px;border-radius:8px;font-weight:700}.tk-x{background:none;border:none;color:var(--tx3);cursor:pointer;font-size:.72rem;padding:2px;flex-shrink:0}
+.ai-prog{display:flex;align-items:center;gap:10px;margin:12px 0 14px}.ai-pb{flex:1;height:6px;background:var(--g2);border-radius:3px;overflow:hidden}.ai-pf{height:100%;background:var(--ge);border-radius:3px;transition:width .6s;box-shadow:0 0 8px rgba(52,211,153,.3)}.ai-pp{font-family:'Sora',sans-serif;font-size:.72rem;font-weight:800;color:var(--e)}
+.hc{background:var(--g1);border:1px solid var(--bd);border-radius:var(--r);padding:18px;margin-bottom:12px;backdrop-filter:blur(10px)}.hc-wk{font-family:'Sora',sans-serif;font-size:.85rem;font-weight:700;color:#fff;margin-bottom:6px}.hc-stats{display:flex;gap:5px;margin-bottom:8px;flex-wrap:wrap}.hc-body{font-size:.78rem;line-height:1.55;color:var(--tx2)}.hc-body strong{color:var(--tx)}.hc-done{font-size:.7rem;color:var(--e);font-weight:700;margin-top:6px}
+.ov{position:fixed;inset:0;z-index:200;background:rgba(0,0,0,.6);backdrop-filter:blur(10px);display:none;align-items:flex-end;justify-content:center}.ov.show{display:flex}.mod{background:var(--bg2);border:1px solid var(--bd);border-radius:24px 24px 0 0;padding:24px 20px calc(36px + var(--sb));width:100%;max-width:480px;max-height:85vh;overflow-y:auto;animation:su .3s cubic-bezier(.16,1,.3,1)}@keyframes su{from{transform:translateY(100%)}to{transform:translateY(0)}}.mod-t{font-family:'Sora',sans-serif;font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:14px}.mi{width:100%;padding:13px 16px;background:var(--g2);border:1.5px solid var(--bd2);border-radius:14px;color:var(--tx);font-family:'Manrope',sans-serif;font-size:.88rem;margin-bottom:10px;outline:none;transition:.2s}.mi:focus{border-color:rgba(168,85,247,.4)}.mi::placeholder{color:var(--tx3)}.mrow{display:flex;gap:6px;margin-bottom:10px}.msel{flex:1;padding:12px;background:var(--g2);border:1.5px solid var(--bd2);border-radius:14px;color:var(--tx);font-family:'Manrope',sans-serif;font-size:.82rem;outline:none;appearance:none}.msel option{background:var(--bg2)}.mb{width:100%;padding:14px;border:none;border-radius:16px;font-family:'Sora',sans-serif;font-size:.88rem;font-weight:700;cursor:pointer;margin-top:6px;transition:.15s}.mb:active{transform:scale(.97)}.mb-s{background:var(--gf);color:#fff}.mb-c{background:var(--g2);border:1px solid var(--bd2);color:var(--tx2)}
+.toast{position:fixed;top:calc(env(safe-area-inset-top,10px) + 58px);left:50%;transform:translateX(-50%) translateY(-20px);z-index:300;background:var(--bg2);border:1px solid var(--bd2);border-radius:18px;padding:16px 18px;max-width:calc(100vw - 32px);width:280px;box-shadow:0 12px 48px rgba(0,0,0,.4);opacity:0;transition:.3s;pointer-events:none;text-align:center;backdrop-filter:blur(20px)}.toast.show{opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto}.toast-t{font-family:'Sora',sans-serif;font-size:.84rem;font-weight:700;margin-bottom:5px}.toast-b{font-size:.72rem;color:var(--tx2);line-height:1.5;text-align:left}.toast-b b{color:var(--tx)}.toast-row{margin:8px auto;display:flex;align-items:center;justify-content:center;gap:8px}.toast-k{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:10px;background:var(--g3);font-size:.95rem;border:1px solid var(--bd)}
+.cfc{position:fixed;inset:0;pointer-events:none;z-index:999;overflow:hidden}.cfp{position:absolute;top:-10px;border-radius:2px;animation:cff 2.5s ease-in forwards}@keyframes cff{0%{transform:translateY(0) rotate(0) scale(1);opacity:1}100%{transform:translateY(100vh) rotate(720deg) scale(0);opacity:0}}
+.emp{text-align:center;padding:40px 16px;color:var(--tx3)}.emp-i{font-size:2.5rem;margin-bottom:10px}.emp p{font-size:.8rem;line-height:1.6}
+::-webkit-scrollbar{width:0}
+</style>
+</head>
+<body>
+<div class="hdr"><div class="hdr-r"><div class="logo">Clarity</div><div class="hdr-rt"><div class="hdr-wk" id="hWk"></div><div class="hdr-d" id="hDate"></div><div class="hdr-s" id="hStreak">🔥 0</div></div></div></div>
+<div class="nav"><button class="nb on" onclick="go('today',this)"><span class="ni">💭</span>Hoy</button><button class="nb" onclick="go('plan',this)"><span class="ni">🎯</span>Mi Plan</button><button class="nb" onclick="go('evo',this)"><span class="ni">📈</span>Evolución</button></div>
+<div class="capw"><div class="cap"><input id="mainIn" lang="es" autocomplete="off" placeholder="¿Qué te ronda ahora?" enterkeyhint="send"/><button class="cb cb-m" onclick="mic()">🎙️</button><button class="cb cb-s" onclick="send()">↑</button></div></div>
+<div class="sec on" id="sec-today"><div class="wc"><div><div class="wc-n" id="wcN">0</div><div class="wc-l">pensamientos<br>esta semana</div></div><div class="wc-r"><div class="wc-t" id="wcT">0</div><div class="wc-d">hoy</div></div></div><div id="tList"></div><div class="ac" id="dBox" style="margin-top:12px;display:none"><div class="ac-t">🔍 Check-in del día</div><div class="ac-sub">La IA analiza tus pensamientos de hoy</div><button class="ac-btn" id="dBtn" onclick="dailyAI()">💡 Analizar mi día</button><div id="dRes"></div></div></div>
+<div class="sec" id="sec-plan"><div id="planC"></div><div class="ac" style="margin-top:12px"><div class="ac-t">🔄 Cerrar semana</div><div class="ac-sub">Análisis local + plan de mejora automático</div><button class="ac-btn2" id="wBtn" onclick="closeWeek()">📊 Cerrar semana + Nuevo plan</button><div id="wRes"></div></div><div class="ac" style="margin-top:10px"><div class="ac-t">🧠 Análisis profundo con Claude</div><div class="ac-sub">Copia un texto preparado con todos tus datos de la semana. Pégalo en Claude para recibir un análisis psicoeducativo personalizado.</div><button class="ac-btn" id="cBtn" onclick="copyForClaude()">📋 Copiar para pegar en Claude</button><div id="cRes"></div></div><div style="margin-top:10px"><button class="mb mb-c" onclick="openMod()" style="font-size:.78rem">+ Tarea manual</button></div></div>
+<div class="sec" id="sec-evo"><div id="evoC"></div><div style="text-align:center;margin-top:16px;display:flex;gap:6px;justify-content:center;flex-wrap:wrap"><button class="mb mb-c" onclick="exportD()" style="width:auto;padding:10px 16px;font-size:.7rem">📥 Exportar</button><button class="mb mb-c" onclick="document.getElementById('impF').click()" style="width:auto;padding:10px 16px;font-size:.7rem">📤 Importar</button><button class="mb mb-c" onclick="if(confirm('¿Borrar TODO?')){localStorage.removeItem(K);location.reload()}" style="width:auto;padding:10px 16px;font-size:.7rem;color:var(--r)">🗑️</button><input type="file" id="impF" accept=".json" style="display:none" onchange="doImp(event)"/></div></div>
+<div class="ov" id="ov" onclick="if(event.target===this)closeMod()"><div class="mod" id="modB"></div></div>
+<div class="toast" id="toast"></div>
+<script>
+const K='clarity2';let D=load();
+function defaults(){return{thoughts:[],tasks:[],history:[],streak:0,lastDate:'',da:null,daDate:''}}
+function load(){try{const d=JSON.parse(localStorage.getItem(K));if(d&&Array.isArray(d.thoughts))return d;}catch(e){}return defaults()}
+function save(){try{localStorage.setItem(K,JSON.stringify(D))}catch(e){}}
+const CATS=[{k:['guille','guillermo','cole','colegio','niño','hijo','psicolog','profesor','parque','jugar','deberes'],c:'👦 Guille',col:'#38bdf8'},{k:['consulta','paciente','guardia','turno','centro salud','domicilio','paliat','cronic','medic','enferm','recet','prueba','derivar','urgent'],c:'🏥 Clínica',col:'#34d399'},{k:['residente','tutor','rotación','docen','sesión','mir','formac','evalua','congres','ponenc','jornada','exponer','presentar','taller'],c:'👩‍🏫 Docencia',col:'#fbbf24'},{k:['app','código','html','póster','abstract','proyecto','radar','observat','gestor','programar','diseñ','linkedin','herramient','digital'],c:'💻 Proyectos',col:'#a78bfa'},{k:['pareja','relación','casa','hogar','familia','viaje','bruselas','vacacion','amig','finde','padres'],c:'❤️ Personal',col:'#f472b6'},{k:['cuerpo','peso','dormir','sueño','cansad','agotad','ejercicio','comer','yoga','dieta'],c:'🌿 Bienestar',col:'#2dd4bf'},{k:['dinero','pagar','comprar','gasto','ahorro','sueldo','hipoteca','factura'],c:'💰 Finanzas',col:'#f59e0b'},{k:['futuro','cambio','decidir','duda','miedo','quiero','necesito','ojalá','sentido','vida','rumbo'],c:'🔮 Futuro',col:'#c084fc'}];
+const EMOS=[{k:['agobio','agobia','estrés','no puedo','no doy','saturad','desbord','mil cosas','abrumad'],e:'😰 Agobio',col:'#fb923c'},{k:['miedo','temo','preocup','angust','ansiedad','nervios','no me atrevo','insegur','vergüenza','pánico','no me veo'],e:'😟 Inseguridad',col:'#f87171'},{k:['triste','llor','pena','mal','fatal','hundid','bajón','vacío','deprimi'],e:'😢 Tristeza',col:'#60a5fa'},{k:['enfad','rabia','cabrea','hart','frustra','impoten','no es justo'],e:'😤 Frustración',col:'#ef4444'},{k:['feliz','genial','bien','content','alegr','ilusion','orgullos','logr','consegui'],e:'😊 Alegría',col:'#4ade80'},{k:['duda','sé si','decidir','no sé','confus','dilema','no tengo claro'],e:'🤔 Duda',col:'#facc15'},{k:['culpa','debería','tendría','fallo','error','no hice'],e:'😔 Culpa',col:'#a8a29e'},{k:['cansad','agotad','dormir','sueño','revent','sin fuerzas','no llego'],e:'😴 Cansancio',col:'#94a3b8'},{k:['esperanza','ilusión','ganas','motivad','energía','puedo','vamos','a tope'],e:'💪 Motivación',col:'#34d399'},{k:['sola','solo','nadie','incomprend','aisla'],e:'🫂 Soledad',col:'#c4b5fd'},{k:['calm','tranquil','paz','relaj'],e:'🧘 Calma',col:'#2dd4bf'},{k:['no quiero que','no tiene ni idea','no saben','no entienden','no valoran'],e:'😠 Impotencia',col:'#f87171'}];
+function analyze(t){const l=t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');let cat='💭 General',catCol='#94a3b8';for(const c of CATS){if(c.k.some(k=>l.includes(k))){cat=c.c;catCol=c.col;break;}}let emos=[];for(const e of EMOS){if(e.k.some(k=>l.includes(k)))emos.push({n:e.e,c:e.col});}let int=1;if(/no puedo|no doy|fatal|horrible|no soporto|hundid|estoy harta|no aguanto|desastre|odio/i.test(l))int=3;else if(/bastante|mucho|muy|no me atrevo|no quiero que|no tiene ni idea|pero no|tampoco|me da miedo|me cuesta|me preocupa|necesito|debería/i.test(l))int=2;return{cat,catCol,emos,int};}
+function localSummary(t){const words=t.text.split(/\s+/);if(words.length<=8)return t.text;const emo=t.emos.length?t.emos[0].n.replace(/^.\s*/,''):'';let core=words.slice(0,9).join(' ');if(words.length>9)core+='…';return emo?(emo+': '+core):core;}
+function summarize(id){const t=D.thoughts.find(x=>x.id===id);if(!t||t.sum)return;t.sum=localSummary(t);save();renderToday();}
+function mic(){document.getElementById('mainIn').focus();setTimeout(()=>{const e=document.getElementById('toast');e.innerHTML='<div class="toast-t">🎙️ Dicta en español</div><div class="toast-row"><span class="toast-k">🌐</span><span style="color:var(--tx3)">→</span><span style="font-size:.72rem;color:var(--e);font-weight:700">ES</span><span style="color:var(--tx3)">→</span><span class="toast-k">🎙</span></div><div class="toast-b">Pulsa <b>🎙</b> en tu teclado</div>';e.classList.add('show');clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove('show'),4000);e.onclick=()=>e.classList.remove('show');},300);}
+function confetti(){const c=document.createElement('div');c.className='cfc';document.body.appendChild(c);['#a855f7','#d946ef','#22d3ee','#34d399','#fbbf24','#ec4899'].forEach((col,ci)=>{for(let i=0;i<6;i++){const p=document.createElement('div');p.className='cfp';p.style.cssText=`left:${Math.random()*100}%;background:${col};animation-delay:${Math.random()*.7}s;animation-duration:${2+Math.random()*1.5}s;width:${6+Math.random()*8}px;height:${6+Math.random()*8}px;border-radius:${Math.random()>.5?'50%':'2px'}`;c.appendChild(p);}});setTimeout(()=>c.remove(),4000);}
+let activeTab='today';
+function send(){const i=document.getElementById('mainIn'),t=i.value.trim();if(!t)return;if(activeTab==='plan')addManual(t);else addThought(t);i.value='';}
+document.getElementById('mainIn').addEventListener('keydown',e=>{if(e.key==='Enter')send();});
+function addThought(text){const a=analyze(text);D.thoughts.unshift({id:Date.now(),text,cat:a.cat,catCol:a.catCol,emos:a.emos,int:a.int,ts:new Date().toISOString(),sum:null});save();renderAll();summarize(D.thoughts[0].id);}
+function delT(id){D.thoughts=D.thoughts.filter(x=>x.id!==id);save();renderAll();}
+function renderToday(){const today=iso(new Date()),tTh=D.thoughts.filter(t=>t.ts.startsWith(today));document.getElementById('wcN').textContent=D.thoughts.length;document.getElementById('wcT').textContent=tTh.length;document.getElementById('dBox').style.display=tTh.length>=1?'block':'none';if(D.da&&D.daDate===today)document.getElementById('dRes').innerHTML=`<div class="ac-body" style="margin-top:12px">${D.da}</div>`;const el=document.getElementById('tList');if(!tTh.length){el.innerHTML='<div class="emp"><div class="emp-i">💭</div><p>¿Qué te ronda hoy?<br>Suéltalo sin filtro.</p></div>';return;}const iC={1:'i1',2:'i2',3:'i3'},iL={1:{bg:'rgba(52,211,153,.08)',c:'#34d399',l:'💚 leve'},2:{bg:'rgba(251,191,36,.08)',c:'#fbbf24',l:'🟡 moderado'},3:{bg:'rgba(244,63,94,.08)',c:'#f43f5e',l:'🔴 intenso'}};el.innerHTML=tTh.map(t=>{const time=new Date(t.ts).toLocaleTimeString('es',{hour:'2-digit',minute:'2-digit'}),emoH=t.emos.map(e=>`<span class="tg" style="background:${e.c}12;color:${e.c}">${e.n}</span>`).join(''),ic=iL[t.int],head=t.sum?`<div class="th-sum">${esc(t.sum)}</div><div class="th-raw">"${esc(t.text)}"</div>`:`<div class="th-ld"><div class="sp"></div>Resumiendo...</div><div class="th-sum" style="font-weight:500;font-size:.85rem">${esc(t.text)}</div>`;return`<div class="th ${iC[t.int]}">${head}<div class="th-tags"><span class="tg" style="background:${t.catCol}15;color:${t.catCol}">${t.cat}</span>${emoH}<span class="tg" style="background:${ic.bg};color:${ic.c}">${ic.l}</span><span class="th-time">${time}</span><button class="th-x" onclick="delT(${t.id})">✕</button></div></div>`;}).join('');}
+function dailyAI(){const btn=document.getElementById('dBtn'),res=document.getElementById('dRes');const today=iso(new Date()),tTh=D.thoughts.filter(t=>t.ts.startsWith(today));if(!tTh.length)return;
+const cs={},es={};let totI=0;tTh.forEach(t=>{cs[t.cat]=(cs[t.cat]||0)+1;t.emos.forEach(e=>{es[e.n]=(es[e.n]||0)+1;});totI+=t.int;});
+const avgI=(totI/tTh.length).toFixed(1);const topCat=Object.entries(cs).sort((a,b)=>b[1]-a[1])[0];const topEmo=Object.entries(es).sort((a,b)=>b[1]-a[1])[0];const hi=tTh.filter(t=>t.int>=3).length;
+let txt='<strong>Tu día de un vistazo:</strong> ';
+txt+=`Has registrado <strong>${tTh.length}</strong> pensamiento${tTh.length>1?'s':''}. `;
+if(topCat)txt+=`Tu cabeza está más en <strong>${topCat[0]}</strong>. `;
+if(topEmo)txt+=`La emoción que más aparece es <strong>${topEmo[0]}</strong>. `;
+if(hi>0)txt+=`Tienes <strong>${hi}</strong> pensamiento${hi>1?'s':''} de intensidad alta — merece${hi>1?'n':''} atención. `;
+const intLbl=avgI>=2.5?'alta':avgI>=1.5?'moderada':'baja';
+txt+=`<br><br><strong>Intensidad media: ${intLbl}</strong>. `;
+// Micro-action suggestions based on patterns
+const tips=[];
+if(es['😰 Agobio']||es['😴 Cansancio'])tips.push('Párate 5 minutos, respira hondo 4 veces y sal a dar una vuelta corta.');
+if(es['😟 Inseguridad']||es['😠 Impotencia'])tips.push('Escribe una cosa que hayas hecho bien hoy, por pequeña que sea.');
+if(es['😢 Tristeza']||es['🫂 Soledad'])tips.push('Habla con alguien de confianza hoy, aunque sea un mensaje corto.');
+if(es['😤 Frustración'])tips.push('Identifica qué está en tu control y qué no. Suelta lo segundo.');
+if(es['🤔 Duda'])tips.push('No necesitas decidir hoy. Apunta los pros y contras y dale una noche.');
+if(es['😊 Alegría']||es['💪 Motivación'])tips.push('¡Buen momento! Aprovecha esta energía para avanzar en algo que lleves postergando.');
+if(es['🧘 Calma'])tips.push('Estás en buen lugar. Disfruta de esta calma y protégela.');
+if(!tips.length)tips.push('Observa cómo te sientes al final del día y compáralo con esta mañana.');
+txt+=`<br><br><strong>💡 Micro-acción:</strong> ${tips[0]}`;
+res.innerHTML=`<div class="ac-body" style="margin-top:12px">${txt}</div>`;D.da=txt;D.daDate=today;save();}
+function closeWeek(){if(D.thoughts.length<3){alert('Mínimo 3 pensamientos para cerrar la semana.');return;}
+const btn=document.getElementById('wBtn'),res=document.getElementById('wRes');
+const cs={},es={};let totI=0;
+D.thoughts.forEach(t=>{cs[t.cat]=(cs[t.cat]||0)+1;t.emos.forEach(e=>{es[e.n]=(es[e.n]||0)+1;});totI+=t.int;});
+const avgI=(totI/D.thoughts.length).toFixed(1);
+const sortedCats=Object.entries(cs).sort((a,b)=>b[1]-a[1]);
+const sortedEmos=Object.entries(es).sort((a,b)=>b[1]-a[1]);
+const topCat=sortedCats[0];const topEmo=sortedEmos[0];
+const hi=D.thoughts.filter(t=>t.int>=3).length;
+const nd=nwD();
+// Build analysis
+let a='<strong>📊 Análisis de tu semana</strong><br><br>';
+a+=`Has registrado <strong>${D.thoughts.length} pensamientos</strong> esta semana. `;
+const intLbl=avgI>=2.5?'alta':avgI>=1.5?'moderada':'baja';
+a+=`La intensidad media ha sido <strong>${intLbl} (${avgI}/3)</strong>. `;
+if(hi>0)a+=`<strong>${hi}</strong> de ellos fueron de alta intensidad. `;
+a+='<br><br>';
+a+='<strong>🧠 Dónde va tu cabeza:</strong> ';
+a+=sortedCats.map(([c,n])=>`${c} (${n})`).join(', ')+'. ';
+if(topCat)a+=`Tu mayor foco ha sido <strong>${topCat[0]}</strong>. `;
+a+='<br><br>';
+if(sortedEmos.length){a+='<strong>💫 Tus emociones:</strong> ';a+=sortedEmos.map(([e,n])=>`${e} (${n})`).join(', ')+'. ';if(topEmo)a+=`Lo que más pesa: <strong>${topEmo[0]}</strong>. `;a+='<br><br>';}
+// Insights
+a+='<strong>💡 Observación:</strong> ';
+if(sortedCats.length>=2&&sortedCats[0][1]>sortedCats[1][1]*2)a+=`Estás muy concentrada en ${topCat[0]}. Cuidado con descuidar otras áreas de tu vida. `;
+else if(sortedCats.length>=3)a+='Tu atención está bastante repartida esta semana. Eso puede ser riqueza o dispersión — tú sabes cuál es. ';
+else a+='Pocas categorías esta semana. ¿Hay algo que no estás soltando? ';
+if(avgI>=2.5)a+='La intensidad es alta — necesitas acciones de autocuidado urgentes. ';
+else if(avgI>=1.5)a+='Intensidad moderada — buen momento para consolidar hábitos saludables. ';
+else a+='Semana tranquila emocionalmente — aprovecha para avanzar en proyectos. ';
+if(es['😰 Agobio']&&es['😴 Cansancio'])a+='Agobio + cansancio es una señal clara: necesitas descansar de verdad, no solo "parar". ';
+if(es['😟 Inseguridad']&&cs['👩‍🏫 Docencia'])a+='La inseguridad en lo profesional/docente es normal. Recuerda todo lo que ya has conseguido. ';
+// Build tasks
+const tasks=[];const dayNames=['lunes','martes','miércoles','jueves','viernes','sábado','domingo'];let dayIdx=0;
+function addHito(text,pri,area){tasks.push({text,pri,area,day:dayNames[dayIdx%7]});dayIdx++;}
+// Always add self-care
+addHito('Paseo de 20 minutos sin móvil después de comer','media','autocuidado');
+if(es['😰 Agobio']||es['😴 Cansancio']||avgI>=2)addHito('Hacer 3 respiraciones profundas antes de empezar la consulta','alta','autocuidado');
+// Based on top emotion
+if(es['😟 Inseguridad'])addHito('Escribir 3 logros profesionales de este mes y releerlos','media','emocional');
+if(es['😤 Frustración']||es['😠 Impotencia'])addHito('Identificar 1 cosa que puedes cambiar y 1 que debes soltar','alta','emocional');
+if(es['😢 Tristeza']||es['🫂 Soledad'])addHito('Quedar o llamar a una amiga/familiar esta semana','alta','relacional');
+if(es['🤔 Duda'])addHito('Escribir pros y contras de la decisión que te ronda y compartirlo con alguien','media','emocional');
+if(es['😔 Culpa'])addHito('Escribirte una carta breve de compasión: qué te dirías si fueras tu propia amiga','media','emocional');
+// Based on categories
+if(cs['👦 Guille'])addHito('Dedicar 30 minutos de juego exclusivo con Guille sin pantallas','alta','relacional');
+if(cs['🏥 Clínica']&&cs['🏥 Clínica']>=3)addHito('Revisar tu agenda de la semana y bloquear 1 hueco para ti','media','profesional');
+if(cs['💻 Proyectos'])addHito('Dedicar 45 minutos enfocados al proyecto que más te ilusiona','media','profesional');
+if(cs['🌿 Bienestar'])addHito('Preparar una comida que te guste de verdad, sin prisa','baja','autocuidado');
+// Always add a relational one if not present
+if(!tasks.some(t=>t.area==='relacional'))addHito('Enviar un mensaje a alguien que te importa diciéndole algo bonito','baja','relacional');
+// Ensure minimum variety and max 7
+const final=tasks.slice(0,7);
+// Assign dates
+final.forEach((t,i)=>{t.day=dayNames[i%7];});
+// Archive
+const pD=D.tasks.filter(t=>t.done).length,pT=D.tasks.length;
+D.history.unshift({id:Date.now(),weekOf:iso(new Date()),tc:D.thoughts.length,topCat:topCat?topCat[0]:'—',topEmo:topEmo?topEmo[0]:'—',ai:parseFloat(avgI),analysis:a,td:pD,tt:pT});
+D.thoughts=[];D.tasks=[];D.da=null;D.daDate='';
+final.forEach((t,i)=>{D.tasks.push({id:Date.now()+i,text:t.text,pri:t.pri,date:nd[t.day]||'',area:t.area,done:false,ts:new Date().toISOString()});});
+save();res.innerHTML=`<div class="ac-body" style="margin-top:12px">${a}</div>`;confetti();renderAll();}
+function nwD(){const t=new Date(),d=(t.getDay()+6)%7,nm=new Date(t);nm.setDate(t.getDate()+(7-d));const r={},ns=['lunes','martes','miércoles','jueves','viernes','sábado','domingo'];for(let i=0;i<7;i++){const x=new Date(nm);x.setDate(nm.getDate()+i);r[ns[i]]=iso(x);}return r;}
+function copyForClaude(){
+if(D.thoughts.length<1){alert('Necesitas al menos 1 pensamiento para generar el texto.');return;}
+const cs={},es={};let totI=0;
+D.thoughts.forEach(t=>{cs[t.cat]=(cs[t.cat]||0)+1;t.emos.forEach(e=>{es[e.n]=(es[e.n]||0)+1;});totI+=t.int;});
+const avgI=(totI/D.thoughts.length).toFixed(1);
+const sortedCats=Object.entries(cs).sort((a,b)=>b[1]-a[1]);
+const sortedEmos=Object.entries(es).sort((a,b)=>b[1]-a[1]);
+const hi=D.thoughts.filter(t=>t.int>=3);
+const pendT=D.tasks.filter(t=>!t.done);
+const doneT=D.tasks.filter(t=>t.done);
+const nd=nwD();
+let prompt=`Eres una psicóloga clínica experta en bienestar emocional y psicoeducación. Hablas en español, de forma directa, empática y cálida. Vas a analizar la semana completa de una médica de familia, tutora de residentes MIR y madre de un niño pequeño llamado Guille.
+
+===== DATOS DE MI SEMANA EN CLARITY =====
+
+📊 PENSAMIENTOS REGISTRADOS: ${D.thoughts.length}
+`;
+prompt+=`\n🧠 DETALLE DE CADA PENSAMIENTO:\n`;
+D.thoughts.forEach((t,i)=>{
+  const d=new Date(t.ts);
+  const day=d.toLocaleDateString('es',{weekday:'long',day:'numeric',month:'short'});
+  const time=d.toLocaleTimeString('es',{hour:'2-digit',minute:'2-digit'});
+  const intLbl=['','leve','moderado','INTENSO'][t.int];
+  const emoList=t.emos.map(e=>e.n).join(', ')||'sin emoción clara';
+  prompt+=`${i+1}. [${day} ${time}] "${t.text}"\n   → Categoría: ${t.cat} | Emociones: ${emoList} | Intensidad: ${intLbl}\n`;
+});
+prompt+=`\n📈 RESUMEN ESTADÍSTICO:
+- Categorías: ${sortedCats.map(([c,n])=>c+': '+n).join(', ')}
+- Emociones: ${sortedEmos.map(([e,n])=>e+': '+n).join(', ')||'ninguna detectada'}
+- Intensidad media: ${avgI}/3
+- Pensamientos intensos (3/3): ${hi.length}
+`;
+if(pendT.length||doneT.length){
+prompt+=`\n✅ TAREAS DE LA SEMANA:
+- Completadas: ${doneT.length}${doneT.length?(' → '+doneT.map(t=>t.text).join('; ')):''}
+- Pendientes: ${pendT.length}${pendT.length?(' → '+pendT.map(t=>t.text).join('; ')):''}
+`;}
+if(D.history.length){
+const prev=D.history[0];
+prompt+=`\n📜 SEMANA ANTERIOR (para contexto):
+- ${prev.tc} pensamientos, categoría principal: ${prev.topCat}, emoción principal: ${prev.topEmo}, intensidad: ${prev.ai}/3
+- Hitos completados: ${prev.td}/${prev.tt}
+`;}
+prompt+=`\n===== LO QUE NECESITO DE TI =====
+
+Por favor, hazme un ANÁLISIS PSICOEDUCATIVO COMPLETO de mi semana:
+
+1. **Estado emocional general** — ¿Cómo ha sido mi semana internamente? (2-3 frases)
+
+2. **Patrones detectados** — ¿Qué se repite? ¿Qué categorías/emociones dominan y por qué?
+
+3. **Conexiones ocultas** — ¿Cómo se relacionan mis distintas preocupaciones entre sí? ¿Hay un hilo conductor?
+
+4. **Lo que está funcionando bien** — Refuerzo positivo. ¿Qué estoy haciendo bien aunque no lo vea?
+
+5. **Lo que necesita atención** — Sin dramatizar, con compasión. ¿Dónde debo poner foco?
+
+6. **Insight psicoeducativo** — Una observación profunda que me ayude a verme con perspectiva.
+
+7. **Plan de acción para la próxima semana** — 5-7 hitos concretos y específicos (con día sugerido) en las áreas: emocional, relacional, profesional y autocuidado. Que estén directamente conectados con los patrones que detectas. Mínimo 2 de autocuidado y 1 relacional.
+
+Fechas de la próxima semana: ${Object.entries(nd).map(([d,f])=>d+': '+f).join(', ')}
+
+Sé profunda, directa y cálida. Como una psicóloga de confianza que me conoce.`;
+
+navigator.clipboard.writeText(prompt).then(()=>{
+  const el=document.getElementById('cRes');
+  el.innerHTML='<div style="margin-top:12px;padding:12px;background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.15);border-radius:12px;font-size:.8rem;color:var(--e);text-align:center"><strong>✅ Copiado al portapapeles</strong><br>Abre Claude → pega → envía</div>';
+  setTimeout(()=>{el.innerHTML='';},5000);
+}).catch(()=>{
+  // Fallback: show in a modal to copy manually
+  document.getElementById('ov').classList.add('show');
+  document.getElementById('modB').innerHTML=`<div class="mod-t">📋 Texto para Claude</div><div style="font-size:.75rem;color:var(--tx2);margin-bottom:10px">Selecciona todo, copia y pégalo en un chat de Claude:</div><textarea class="mi" style="height:250px;font-size:.72rem;line-height:1.4;resize:none" readonly onclick="this.select()">${esc(prompt)}</textarea><button class="mb mb-s" onclick="document.querySelector('.mod textarea').select();document.execCommand('copy');closeMod();">Copiar</button><button class="mb mb-c" onclick="closeMod()">Cerrar</button>`;
+});
+}
+function addManual(t){D.tasks.unshift({id:Date.now(),text:t,pri:'media',date:'',area:'',done:false,ts:new Date().toISOString()});save();renderPlan();}
+function togTk(id){const t=D.tasks.find(x=>x.id===id);if(t){t.done=!t.done;if(t.done&&D.tasks.length&&D.tasks.every(x=>x.done))confetti();}save();renderPlan();}
+function delTk(id){D.tasks=D.tasks.filter(x=>x.id!==id);save();renderPlan();}
+function renderPlan(){const el=document.getElementById('planC');if(!D.tasks.length){el.innerHTML='<div class="emp"><div class="emp-i">🎯</div><p>Tu plan aparecerá aquí<br>al cerrar la semana.</p></div>';return;}const dn=D.tasks.filter(t=>t.done).length,tot=D.tasks.length,pct=Math.round(dn/tot*100),aC={emocional:'#a78bfa',relacional:'#f472b6',profesional:'#fbbf24',autocuidado:'#2dd4bf'};let h=`<div style="font-family:'Sora',sans-serif;font-size:.95rem;font-weight:700;color:#fff;margin-bottom:6px">🎯 Plan de mejora</div><div class="ai-prog"><div class="ai-pb"><div class="ai-pf" style="width:${pct}%"></div></div><div class="ai-pp">${pct}%</div></div>`;const sorted=[...D.tasks].sort((a,b)=>{if(a.done!==b.done)return a.done?1:-1;return(a.date||'z').localeCompare(b.date||'z');});h+=sorted.map(t=>{const dayN=t.date?new Date(t.date+'T12:00').toLocaleDateString('es',{weekday:'short',day:'numeric'}):'',ac=aC[t.area]||'#a78bfa';return`<div class="tk ${t.done?'dn':''}"><button class="ck ${t.done?'dn':''}" onclick="togTk(${t.id})">${t.done?'✓':''}</button><div class="tk-b"><div class="tk-t">${esc(t.text)}</div><div class="tk-s"><span class="tp tp-${t.pri[0]}">${t.pri}</span>${dayN?`<span class="tk-d">📅 ${dayN}</span>`:''}${t.area?`<span class="tk-area" style="background:${ac}12;color:${ac}">${t.area}</span>`:''}</div></div><button class="tk-x" onclick="delTk(${t.id})">✕</button></div>`;}).join('');if(pct===100)h+=`<div style="text-align:center;padding:14px;font-family:'Sora',sans-serif;font-size:.9rem;color:var(--e);font-weight:700">🎉 ¡Plan completado!</div>`;el.innerHTML=h;}
+function renderEvo(){const el=document.getElementById('evoC');if(!D.history.length){el.innerHTML='<div class="emp"><div class="emp-i">📈</div><p>Tu evolución aparecerá aquí<br>al cerrar tu primera semana.</p></div>';return;}el.innerHTML=D.history.map((w,i)=>{const wd=new Date(w.weekOf).toLocaleDateString('es',{day:'numeric',month:'long'}),il=w.ai>=2.5?'🔴 alta':w.ai>=1.5?'🟡 moderada':'💚 baja',prev=D.history[i+1];let trend='';if(prev){const d=w.ai-prev.ai;trend=d<-.3?' 📉':d>.3?' 📈':' ➡️';}return`<div class="hc"><div class="hc-wk">Semana del ${wd}${trend}</div><div class="hc-stats"><span class="tg" style="background:rgba(168,85,247,.1);color:#a78bfa">${w.tc} pensamientos</span><span class="tg" style="background:rgba(52,211,153,.08);color:#34d399">${w.topCat}</span><span class="tg" style="background:rgba(244,63,94,.08);color:#f87171">${w.topEmo}</span><span class="tg" style="background:rgba(251,191,36,.08);color:#fbbf24">${il}</span></div>${w.tt?`<div class="hc-done">✅ ${w.td}/${w.tt} hitos</div>`:''}<div class="hc-body" style="margin-top:8px">${w.analysis}</div></div>`;}).join('');}
+function openMod(){document.getElementById('ov').classList.add('show');document.getElementById('modB').innerHTML=`<div class="mod-t">+ Tarea</div><input class="mi" id="mTx" placeholder="¿Qué quieres hacer?"/><div class="mrow"><select class="msel" id="mPr"><option value="media">🟡 Media</option><option value="alta">🔴 Alta</option><option value="baja">🟢 Baja</option></select><input class="mi" id="mDt" type="date" style="margin:0;flex:1"/></div><button class="mb mb-s" onclick="saveMTk()">Guardar</button><button class="mb mb-c" onclick="closeMod()">Cancelar</button>`;setTimeout(()=>document.getElementById('mTx').focus(),200);}
+function saveMTk(){const t=document.getElementById('mTx').value.trim();if(!t)return;D.tasks.unshift({id:Date.now(),text:t,pri:document.getElementById('mPr').value,date:document.getElementById('mDt').value||'',area:'',done:false,ts:new Date().toISOString()});save();closeMod();renderPlan();}
+function closeMod(){document.getElementById('ov').classList.remove('show');}
+function iso(d){return d.toISOString().split('T')[0]}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function updateStreak(){const t=iso(new Date());if(D.lastDate!==t){const y=new Date();y.setDate(y.getDate()-1);if(D.lastDate===iso(y))D.streak++;else D.streak=1;D.lastDate=t;save();}document.getElementById('hStreak').textContent=`🔥 ${D.streak}`;}
+function getWk(){const d=new Date(),s=new Date(d.getFullYear(),0,1);return Math.ceil(((d-s)/864e5+s.getDay()+1)/7);}
+function exportD(){const b=new Blob([JSON.stringify(D,null,2)],{type:'application/json'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download=`clarity_${iso(new Date())}.json`;a.click();}
+function doImp(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=ev=>{try{const d=JSON.parse(ev.target.result);if(d.thoughts!==undefined){D=d;save();renderAll();alert('✅');}else alert('No válido');}catch(er){alert('Error');}};r.readAsText(f);}
+function go(tab,btn){activeTab=tab;document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));document.querySelectorAll('.nb').forEach(t=>t.classList.remove('on'));document.getElementById('sec-'+tab).classList.add('on');btn.classList.add('on');document.getElementById('mainIn').placeholder=tab==='plan'?'Tarea rápida...':'¿Qué te ronda ahora?';renderAll();}
+function renderAll(){document.getElementById('hDate').textContent=new Date().toLocaleDateString('es',{weekday:'short',day:'numeric',month:'short'});document.getElementById('hWk').textContent=`Sem ${getWk()}`;updateStreak();renderToday();renderPlan();renderEvo();}
+
+renderAll();D.thoughts.filter(t=>!t.sum).forEach(t=>summarize(t.id));
+</script>
+</body>
+</html>
